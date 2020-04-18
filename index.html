@@ -16,18 +16,51 @@
 			<div class="blurb">
                 <h1>Background Noises</h1>
                 <div>				
-                    <h3>Lego Antikythera Mechanism 1</h3>
-                    <audio controls loop src="Lego Antikythera Mechanism.mp3" />
+                    <h3>Beach</h3>
+                    <audio controls loop src="./sounds/Beach_Short.mp3" />
                 </div>
                 <div>	
-                    <h3>Lego Antikythera Mechanism 2</h3>			
-                    <audio controls loop src="Lego Antikythera Mechanism.mp3" />
+                    <h3>Cafe</h3>			
+                    <audio id="audioControl1" controls loop src="./sounds/Cafe_Short.mp3" />
                 </div>
                 <div>				
-                    <h3>Lego Antikythera Mechanism 3</h3>
-                    <audio controls loop src="Lego Antikythera Mechanism.mp3" />
-                </div>
+                    <h3>Candle</h3>
+                    <audio controls loop src="./sounds/Candle_Shortmp3.mp3" />
+				</div>
+                <div>				
+                    <h3>City walk in rain</h3>
+                    <audio controls loop src="./sounds/CityWalk_In_Rain_Short.mp3" />
+				</div>
+                <div>				
+                    <h3>City walk (no rain)</h3>
+                    <audio controls loop src="./sounds/CityWalk_Short.mp3" />
+				</div>
+                <div>				
+                    <h3>Cricket chirps</h3>
+                    <audio controls loop src="./sounds/Cricket_Short.mp3" />
+				</div>
+                <div>				
+                    <h3>Log fire</h3>
+                    <audio controls loop src="./sounds/Log_fire_Short.mp3" />
+				</div>
+                <div>				
+                    <h3>Thunder (no rain)</h3>
+                    <audio controls loop src="./sounds/Thunder_no_rain_short.mp3" />
+				</div>
+				<div>				
+                    <h3>Waterfall</h3>
+                    <audio controls loop src="./sounds/Waterfall_Short.mp3" />
+				</div>               																									
 			</div><!-- /.blurb -->		
 		</div><!-- /.container -->
+
+
+		<script type="text/javascript">
+			var audioTagCollection = document.getElementsByTagName("audio");
+			var i;
+			for (i = 0; i < audioTagCollection.length; i++) {
+				audioTagCollection[i].volume = 0.2;
+			}				
+		</script>
 	</body>
 </html>
